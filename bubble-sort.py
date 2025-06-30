@@ -30,7 +30,7 @@ for i in range(n):
     for j in range(n - 1 - i):
         total_j = sum(score_list[j][1].values())
         total_next = sum(score_list[j + 1][1].values())
-        if total_j > total_next:
+        if total_j < total_next:
             temp = score_list[j]
             score_list[j] = score_list[j + 1]
             score_list[j + 1] =temp
